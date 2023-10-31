@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StopWatch</title>
-    <script src="resources/js/script.js" defer></script>
+    <title>Stopwatch with Laps</title>
     <link rel="stylesheet" href="resources/css/style.css" />
+    <script src="resources/js/script.js" defer></script>
   </head>
   <body>
-    <div>STOP WATCH</div>
+    <div class="main">
+      <div class="title">Stopwatch Website</div>
+      <br />
+      <div class="subtitle">Made by Sumesh Shrestha</div>
+      <div class="swbody">
+        <div id="stopwatch">00:00:00</div>
+        <div class="buttons">
+          <button id="startStop">Start</button>
+          <button id="lap">Lap</button>
+          <button id="reset">Reset</button>
+        </div>
+        <div class="lapList">
+          <ul id="laps"></ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

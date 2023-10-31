@@ -1,0 +1,57 @@
+:root{
+    background: wheat;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main{
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(78, 69, 53);
+    .title{
+        font-size: 50px;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 5px;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+    .swbody{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        gap: 20px;
+        #stopwatch {
+            font-size: 75px;
+            margin-top: 100px;
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            & button{
+                padding: 5px 15px 5px 15px;
+                font-size: 18px;
+                background-color: wheat;
+                border: 2px solid rgb(78, 69, 53);
+                border-radius: 5px;
+                color:rgb(78, 69, 53);
+                transition: ease-out 100ms;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 600;
+                &:hover{
+                    background-color: rgb(78, 69, 53);
+                    color: wheat;
+                    cursor: pointer;
+                }
+            }
+        }
+        .lapList{
+            font-size: 20px;
+            line-height: 35px;
+        }
+    }
+}
+
